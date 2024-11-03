@@ -1,10 +1,12 @@
 .button {
+  display: inline-block;
   font-size: var(--fs-7);
   font-weight: 700;
   line-height: 1.5;
   padding: 10.5px 24px;
   border-radius: 28px;
-  transition: background 150ms ease-in-out;
+  display: inline-block;
+  transition: background, opacity 150ms ease-in-out;
 }
 
 .button.dark {
@@ -12,7 +14,30 @@
   color: var(--clr-white);
 }
 
-
 .button.dark:hover {
   background-color: var(--clr-blue-600);
+}
+
+.button.pink {
+  background: var(--gradient-pink);
+  color: var(--clr-white);
+}
+
+.button.pink:hover {
+  opacity: 0.5;
+}
+
+.button.purple {
+  background: var(--gradient-purple);
+  color: var(--clr-white);
+}
+
+.button.purple:hover {
+  opacity: 0.5;
+}
+
+@media (width >= 75em) {
+  .button {
+    padding: 16px 32px;
+  }
 }

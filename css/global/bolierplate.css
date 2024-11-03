@@ -32,12 +32,37 @@ img {
   height: auto;
 }
 
+.logo {
+  width: 5rem;
+  transition: opacity 150ms ease-in-out;
+}
+
+@media (width >= 75em) {
+  .logo {
+    width: 6.9375rem;
+  }
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
 a {
   text-decoration: none;
+}
+
+p {
+  color: var(--clr-grey);
+  line-height: 1.5;
+  max-width: 35ch;
 }
 
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-weight: 500;
+}
+
+main {
+  overflow-x: clip;
 }
